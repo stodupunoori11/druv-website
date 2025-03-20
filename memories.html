@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories of Druv Pabba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Memories of Druv Pabba</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="memories.html">Memories</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Share Your Memories</h2>
+        <form id="memoryForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" required></textarea>
+
+            <label for="imageLink">Image Link (optional):</label>
+            <input type="url" id="imageLink" placeholder="Paste an image URL">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Shared Memories</h2>
+        <div id="memoriesList"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
